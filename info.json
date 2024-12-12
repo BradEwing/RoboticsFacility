@@ -1,0 +1,9 @@
+{
+    "name": "RoboticsFacility",
+    "version": "0.1.0",
+    "title": "Robotics Facility",
+    "author": "Woxan",
+    "factorio_version": "2.0",
+    "dependencies": ["base", "space-age"],
+    "description": "This mod adds a Robotics Facility, which has productivity bonuses for robots, logistics and defender capsules."
+}
