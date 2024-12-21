@@ -100,6 +100,16 @@ local assemblingMachine = {
         {-2.5, -2.8}, 
         {2.5, 2.5}
     },
+    fluid_boxes = {
+        {
+            production_type = "input",
+            pipe_picture = assembler2pipepictures(),
+            pipe_covers = pipecoverspictures(),
+            volume = 1000,
+            pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, -2} }},
+            secondary_draw_orders = { north = -1 }
+        }
+    },
     graphics_set = {
         animation = {
             layers = {
@@ -184,6 +194,7 @@ local assemblingMachine = {
     module_slots = 5,
     allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
     match_animation_speed_to_activity = true,
+    fluid_boxes_off_when_no_fluid_recipe = true,
 }
 
 local technology = {
