@@ -22,6 +22,8 @@ data.raw.recipe["spidertron"].category = "robotics"
 
 -- Intermediates
 data.raw.recipe["flying-robot-frame"].category = "robotics"
+data.raw.recipe["engine-unit"].category = "robotics"
+data.raw.recipe["electric-engine-unit"].category = "robotics"
 
 -- Capsules
 data.raw.recipe["defender-capsule"].category = "robotics"
