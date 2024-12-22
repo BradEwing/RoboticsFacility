@@ -200,8 +200,8 @@ local assemblingMachine = {
 local technology = {
     type = "technology",
     name = "robotics-facility",
-    icon = "__RoboticsFacility__/graphics/rf-static.png",
-    icon_size = 320,
+    icon = "__RoboticsFacility__/graphics/rf-icon-big.png",
+    icon_size = 640,
     effects = {
         {
             type = "unlock-recipe",
