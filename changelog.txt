@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.4.1
+  Changes:
+    - Increased size of recipe icon in alt-mode.
+    - Adjusted module position in alt-mode. 
+
+---------------------------------------------------------------------------------------------------
 Version: 0.4.0
   Features:
     - Asteroid Collector added to robotics recipe category
