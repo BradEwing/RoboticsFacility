@@ -64,8 +64,20 @@ local assemblingMachine = {
             productivity = 0.5
         }
     },
-    alert_icon_shift = util.by_pixel(0, 6),
-    entity_info_icon_shift = util.by_pixel(0, 6),
+    --alert_icon_shift = util.by_pixel(0, 6),
+    --entity_info_icon_shift = util.by_pixel(0, 6),
+    icon_draw_specification = {
+        shift = {0, -0.6}, 
+        scale = 1.8, 
+        scale_for_many = 1,
+        render_layer = "entity-info-icon"
+    },
+    icons_positioning = {
+        {
+            inventory_index = defines.inventory.assembling_machine_modules, shift = {0, 1}
+        },
+
+    },
     vehicle_impact_sound =  { 
         filename = "__base__/sound/car-metal-impact.ogg", 
         volume = 0.65 
@@ -97,7 +109,7 @@ local assemblingMachine = {
         {2.5, 2.5}
     },
     drawing_box = {
-        {-2.5, -2.8}, 
+        {-2.5, -2.5}, 
         {2.5, 2.5}
     },
     fluid_boxes = {
