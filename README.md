@@ -5,7 +5,10 @@
 The Robotics Facility is a Fulgora exclusive unlock that has productivity bonuses for crafting inserters, robots, defender capsules and personal equipment. 
 
 ## Compatability
+
 [Combat Robots Overhaul](https://github.com/Wannie91/Combat-Robots-Overhaul)
+
+[Bots Bots Bots (Forked)](https://mods.factorio.com/mod/botsbotsbotsfork)
 
 ## Credits
 
