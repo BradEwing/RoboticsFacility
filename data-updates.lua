@@ -26,6 +26,9 @@ data.raw.recipe["flying-robot-frame"].category = "robotics"
 data.raw.recipe["engine-unit"].category = "robotics"
 data.raw.recipe["electric-engine-unit"].category = "robotics"
 
+-- Space Buildings
+data.raw.recipe["asteroid-collector"].category = "robotics"
+
 -- Capsules
 data.raw.recipe["defender-capsule"].category = "robotics"
 data.raw.recipe["distractor-capsule"].category = "robotics"
