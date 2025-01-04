@@ -1,4 +1,5 @@
 require "__RoboticsFacility__.compatability.CombatRobotsOverhaul"
+require "__RoboticsFacility__.compatability.botsbotsbotsfork"
 
 -- Logistics
 data.raw.recipe["construction-robot"].category = "robotics"
