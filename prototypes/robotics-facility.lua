@@ -74,7 +74,6 @@ local assemblingMachine = {
         {
             inventory_index = defines.inventory.assembling_machine_modules, shift = {0, 1}
         },
-
     },
     vehicle_impact_sound =  { 
         filename = "__base__/sound/car-metal-impact.ogg", 
