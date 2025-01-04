@@ -1,0 +1,22 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.4.0
+  Features:
+    - Asteroid Collector added to robotics recipe category
+    - Added changelog.txt
+    - Bots Bots Bots (Forked) support added.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.3.0
+  Minor Features:
+    - Updated Icon
+
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+  Features:
+    - Added engine unit and electic engine unit to robotics recipe category
+    - CombatRobotsOverhaul support added.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+  Features:
+    - Initial release
