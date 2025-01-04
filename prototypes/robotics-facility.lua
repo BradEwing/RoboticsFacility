@@ -64,8 +64,6 @@ local assemblingMachine = {
             productivity = 0.5
         }
     },
-    --alert_icon_shift = util.by_pixel(0, 6),
-    --entity_info_icon_shift = util.by_pixel(0, 6),
     icon_draw_specification = {
         shift = {0, -0.6}, 
         scale = 1.8, 
