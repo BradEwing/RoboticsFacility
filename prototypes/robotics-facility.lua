@@ -36,7 +36,8 @@ local item = {
     subgroup = "production-machine",
     order = "f[centrifuge]",
     place_result = "robotics-facility",
-    stack_size = 50
+    stack_size = 50,
+    default_import_location = "fulgora",
 }
 
 local assemblingMachine = {
