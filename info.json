@@ -9,7 +9,8 @@
         "space-age",
         "(?) CombatRobotsOverhaul >= 2.1.11",
         "(?) botsbotsbotsfork >= 2.1.5",
-        "(?) maraxsis >= 1.27.14"
+        "(?) maraxsis >= 1.27.14",
+        "(?) lokisbotsfork >= 1.1.0"
     ],
     "description": "This mod adds a Robotics Facility, which has productivity bonuses for robots, logistics and defender capsules."
 }
