@@ -36,8 +36,12 @@ local item = {
     subgroup = "production-machine",
     order = "f[centrifuge]",
     place_result = "robotics-facility",
-    stack_size = 50,
+    stack_size = 20,
     default_import_location = "fulgora",
+    weight = 200 * kg,
+    inventory_move_sound = item_sounds.electric_large_inventory_move,
+    pick_sound = item_sounds.electric_large_inventory_pickup,
+    drop_sound = item_sounds.electric_large_inventory_move,
 }
 
 local assemblingMachine = {
@@ -224,7 +228,7 @@ local technology = {
         "production-science-pack",
     },
     unit = {
-        count = 500,
+        count = 1000,
         ingredients = {
             {"automation-science-pack", 1},
             {"logistic-science-pack", 1},
