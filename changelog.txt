@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.0
+  Changes:
+    - Added lokisbotsfork compatability
+    - Added 5dim_logistic and 5dim_transport compatability
+    - Rebalanced weight, tech cost and stack size.
+      - Rocket capacity: 3 -> 5
+      - Stack size: 50 -> 20
+      - Research cost: 500 -> 1000
+
+---------------------------------------------------------------------------------------------------
 Version: 0.5.1
   Bugfixes:
     - Set default import location to fulgora
