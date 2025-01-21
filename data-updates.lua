@@ -46,6 +46,9 @@ data.raw.recipe["power-armor"].category = "robotics"
 data.raw.recipe["power-armor-mk2"].category = "robotics"
 data.raw.recipe["mech-armor"].category = "robotics"
 
+-- Ammo
+data.raw.recipe["capture-robot-rocket"].category = "robotics"
+
 -- Adopted from Lunar Landings: https://github.com/tburrows13/LunarLandings/blob/0214b4e48ce1dadf149d2fe8d4f878b0bafb7b62/prototypes/low-grav-assembling-machine.lua#L5C1-L20C4
 local function add_to_crafting_categories(prototype)
     local crafting_categories = prototype.crafting_categories or {}
