@@ -39,9 +39,6 @@ local item = {
     stack_size = 20,
     default_import_location = "fulgora",
     weight = 200 * kg,
-    inventory_move_sound = item_sounds.electric_large_inventory_move,
-    pick_sound = item_sounds.electric_large_inventory_pickup,
-    drop_sound = item_sounds.electric_large_inventory_move,
 }
 
 local assemblingMachine = {
