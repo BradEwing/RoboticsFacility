@@ -2,6 +2,8 @@ require "__RoboticsFacility__.compatability.CombatRobotsOverhaul"
 require "__RoboticsFacility__.compatability.botsbotsbotsfork"
 require "__RoboticsFacility__.compatability.Maraxsis"
 require "__RoboticsFacility__.compatability.lokisbotsfork"
+require "__RoboticsFacility__.compatability.5dim_logistic"
+require "__RoboticsFacility__.compatability.5dim_transport"
 
 -- Logistics
 data.raw.recipe["construction-robot"].category = "robotics"
