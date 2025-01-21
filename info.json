@@ -10,7 +10,9 @@
         "(?) CombatRobotsOverhaul >= 2.1.11",
         "(?) botsbotsbotsfork >= 2.1.5",
         "(?) maraxsis >= 1.27.14",
-        "(?) lokisbotsfork >= 1.1.0"
+        "(?) lokisbotsfork >= 1.1.0",
+        "(?) 5dim_transport >= 2.0.18",
+        "(?) 5dim_logistic >= 2.0.2"
     ],
     "description": "This mod adds a Robotics Facility, which has productivity bonuses for robots, logistics and defender capsules."
 }
