@@ -1,9 +1,11 @@
 local sounds = require("__base__.prototypes.entity.sounds")
+local assembler_pictures = require("__base__.prototypes.entity.assembler-pictures")
+require("__base__.prototypes.entity.pipecovers")
 
 local recipe = {
     type = "recipe",
     name = "robotics-facility",
-    category = "robotics",
+    categories = {"robotics"},
     enabled = false,
     energy_required = 10,
     ingredients = {
@@ -74,7 +76,7 @@ local assemblingMachine = {
     },
     icons_positioning = {
         {
-            inventory_index = defines.inventory.assembling_machine_modules, shift = {0, 1}
+            inventory_index = defines.inventory.crafter_modules, shift = {0, 1}
         },
     },
     vehicle_impact_sound =  { 
@@ -114,7 +116,7 @@ local assemblingMachine = {
     fluid_boxes = {
         {
             production_type = "input",
-            pipe_picture = assembler2pipepictures(),
+            pipe_picture = assembler_pictures.assembler2pipepictures,
             pipe_covers = pipecoverspictures(),
             volume = 1000,
             pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, -2} }},

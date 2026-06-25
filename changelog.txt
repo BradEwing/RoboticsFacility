@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.2
+  Changes:
+    - Updated for Factorio 2.1
+    - Switched recipes to the new categories field
+    - Updated assembling machine prototype to the 2.1 assembler-pictures and crafter module inventory API
+---------------------------------------------------------------------------------------------------
 Version: 0.6.1
   Changes:
     - Added capture robot rocket to robotics recipe category
