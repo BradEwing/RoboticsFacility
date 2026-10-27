@@ -1,5 +1,6 @@
 if not mods["CombatRobotsOverhaul"] then return end 
+local add_robotics_category = require("__RoboticsFacility__.lib.categories")
 
-data.raw.recipe["defender-unit"].categories = {"robotics"}
-data.raw.recipe["sentry-unit"].categories = {"robotics"}
-data.raw.recipe["destroyer-unit"].categories = {"robotics"}
+add_robotics_category("defender-unit")
+add_robotics_category("sentry-unit")
+add_robotics_category("destroyer-unit")

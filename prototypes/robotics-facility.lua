@@ -5,7 +5,7 @@ require("__base__.prototypes.entity.pipecovers")
 local recipe = {
     type = "recipe",
     name = "robotics-facility",
-    categories = {"robotics"},
+    categories = {"crafting", "robotics"},
     enabled = false,
     energy_required = 10,
     ingredients = {
