@@ -1,53 +1,52 @@
 require "__RoboticsFacility__.compatability.CombatRobotsOverhaul"
 require "__RoboticsFacility__.compatability.botsbotsbotsfork"
-require "__RoboticsFacility__.compatability.Maraxsis"
 require "__RoboticsFacility__.compatability.lokisbotsfork"
 require "__RoboticsFacility__.compatability.5dim_logistic"
 require "__RoboticsFacility__.compatability.5dim_transport"
 
 -- Logistics
-data.raw.recipe["construction-robot"].category = "robotics"
-data.raw.recipe["logistic-robot"].category = "robotics"
-data.raw.recipe["roboport"].category = "robotics"
-data.raw.recipe["active-provider-chest"].category = "robotics"
-data.raw.recipe["passive-provider-chest"].category = "robotics"
-data.raw.recipe["storage-chest"].category = "robotics"
-data.raw.recipe["buffer-chest"].category = "robotics"
-data.raw.recipe["requester-chest"].category = "robotics"
+data.raw.recipe["construction-robot"].categories = {"robotics"}
+data.raw.recipe["logistic-robot"].categories = {"robotics"}
+data.raw.recipe["roboport"].categories = {"robotics"}
+data.raw.recipe["active-provider-chest"].categories = {"robotics"}
+data.raw.recipe["passive-provider-chest"].categories = {"robotics"}
+data.raw.recipe["storage-chest"].categories = {"robotics"}
+data.raw.recipe["buffer-chest"].categories = {"robotics"}
+data.raw.recipe["requester-chest"].categories = {"robotics"}
 
 -- Inserters
-data.raw.recipe["inserter"].category = "robotics"
-data.raw.recipe["long-handed-inserter"].category = "robotics"
-data.raw.recipe["fast-inserter"].category = "robotics"
-data.raw.recipe["bulk-inserter"].category = "robotics"
-data.raw.recipe["stack-inserter"].category = "robotics"
+data.raw.recipe["inserter"].categories = {"robotics"}
+data.raw.recipe["long-handed-inserter"].categories = {"robotics"}
+data.raw.recipe["fast-inserter"].categories = {"robotics"}
+data.raw.recipe["bulk-inserter"].categories = {"robotics"}
+data.raw.recipe["stack-inserter"].categories = {"robotics"}
 
 -- Spidertron
-data.raw.recipe["spidertron"].category = "robotics"
+data.raw.recipe["spidertron"].categories = {"robotics"}
 
 -- Intermediates
-data.raw.recipe["flying-robot-frame"].category = "robotics"
-data.raw.recipe["engine-unit"].category = "robotics"
-data.raw.recipe["electric-engine-unit"].category = "robotics"
+data.raw.recipe["flying-robot-frame"].categories = {"robotics"}
+data.raw.recipe["engine-unit"].categories = {"robotics"}
+data.raw.recipe["electric-engine-unit"].categories = {"robotics"}
 
 -- Space Buildings
-data.raw.recipe["asteroid-collector"].category = "robotics"
+data.raw.recipe["asteroid-collector"].categories = {"robotics"}
 
 -- Capsules
-data.raw.recipe["defender-capsule"].category = "robotics"
-data.raw.recipe["distractor-capsule"].category = "robotics"
-data.raw.recipe["destroyer-capsule"].category = "robotics"
+data.raw.recipe["defender-capsule"].categories = {"robotics"}
+data.raw.recipe["distractor-capsule"].categories = {"robotics"}
+data.raw.recipe["destroyer-capsule"].categories = {"robotics"}
 
 -- Personal Equipment 
-data.raw.recipe["exoskeleton-equipment"].category = "robotics"
-data.raw.recipe["personal-roboport-equipment"].category = "robotics"
-data.raw.recipe["personal-roboport-mk2-equipment"].category = "robotics"
-data.raw.recipe["power-armor"].category = "robotics"
-data.raw.recipe["power-armor-mk2"].category = "robotics"
-data.raw.recipe["mech-armor"].category = "robotics"
+data.raw.recipe["exoskeleton-equipment"].categories = {"robotics"}
+data.raw.recipe["personal-roboport-equipment"].categories = {"robotics"}
+data.raw.recipe["personal-roboport-mk2-equipment"].categories = {"robotics"}
+data.raw.recipe["power-armor"].categories = {"robotics"}
+data.raw.recipe["power-armor-mk2"].categories = {"robotics"}
+data.raw.recipe["mech-armor"].categories = {"robotics"}
 
 -- Ammo
-data.raw.recipe["capture-robot-rocket"].category = "robotics"
+data.raw.recipe["capture-robot-rocket"].categories = {"robotics"}
 
 -- Adopted from Lunar Landings: https://github.com/tburrows13/LunarLandings/blob/0214b4e48ce1dadf149d2fe8d4f878b0bafb7b62/prototypes/low-grav-assembling-machine.lua#L5C1-L20C4
 local function add_to_crafting_categories(prototype)
@@ -66,3 +65,6 @@ end
 for _, prototype in pairs(data.raw["character"]) do
     add_to_crafting_categories(prototype)
 end
+
+-- Runs after the category overrides above
+require "__RoboticsFacility__.compatability.Maraxsis"
