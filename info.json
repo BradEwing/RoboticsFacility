@@ -9,7 +9,7 @@
         "space-age >= 2.1",
         "(?) CombatRobotsOverhaul >= 2.1.11",
         "(?) botsbotsbotsfork >= 2.1.5",
-        "(?) maraxsis >= 1.27.14",
+        "(?) maraxsis >= 1.32.0",
         "(?) lokisbotsfork >= 1.1.0",
         "(?) 5dim_transport >= 2.0.18",
         "(?) 5dim_logistic >= 2.0.2"

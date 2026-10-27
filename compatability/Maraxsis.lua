@@ -1,3 +1,5 @@
 if not mods["maraxsis"] then return end 
 
-table.insert(data.raw["assembling-machine"]["robotics-facility"].crafting_categories, "maraxsis-hydro-plant-or-advanced-crafting")
+-- Maraxsis appends "maraxsis-hydro-plant" to these recipes; restore it after our categories override.
+table.insert(data.raw.recipe["engine-unit"].categories, "maraxsis-hydro-plant")
+table.insert(data.raw.recipe["electric-engine-unit"].categories, "maraxsis-hydro-plant")

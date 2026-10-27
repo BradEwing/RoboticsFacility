@@ -1,6 +1,5 @@
 require "__RoboticsFacility__.compatability.CombatRobotsOverhaul"
 require "__RoboticsFacility__.compatability.botsbotsbotsfork"
-require "__RoboticsFacility__.compatability.Maraxsis"
 require "__RoboticsFacility__.compatability.lokisbotsfork"
 require "__RoboticsFacility__.compatability.5dim_logistic"
 require "__RoboticsFacility__.compatability.5dim_transport"
@@ -66,3 +65,6 @@ end
 for _, prototype in pairs(data.raw["character"]) do
     add_to_crafting_categories(prototype)
 end
+
+-- Runs after the category overrides above
+require "__RoboticsFacility__.compatability.Maraxsis"

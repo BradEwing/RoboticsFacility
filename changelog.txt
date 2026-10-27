@@ -4,6 +4,7 @@ Version: 0.6.2
     - Updated for Factorio 2.1
     - Switched recipes to the new categories field
     - Updated assembling machine prototype to the 2.1 assembler-pictures and crafter module inventory API
+    - Fixed Maraxsis compatibility for its 2.1 recipe categories; hydro plant can craft engine units again
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.1
   Changes:
