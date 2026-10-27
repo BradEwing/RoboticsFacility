@@ -3,68 +3,48 @@ require "__RoboticsFacility__.compatability.botsbotsbotsfork"
 require "__RoboticsFacility__.compatability.lokisbotsfork"
 require "__RoboticsFacility__.compatability.5dim_logistic"
 require "__RoboticsFacility__.compatability.5dim_transport"
+local add_robotics_category = require("__RoboticsFacility__.lib.categories")
 
 -- Logistics
-data.raw.recipe["construction-robot"].categories = {"robotics"}
-data.raw.recipe["logistic-robot"].categories = {"robotics"}
-data.raw.recipe["roboport"].categories = {"robotics"}
-data.raw.recipe["active-provider-chest"].categories = {"robotics"}
-data.raw.recipe["passive-provider-chest"].categories = {"robotics"}
-data.raw.recipe["storage-chest"].categories = {"robotics"}
-data.raw.recipe["buffer-chest"].categories = {"robotics"}
-data.raw.recipe["requester-chest"].categories = {"robotics"}
+add_robotics_category("construction-robot")
+add_robotics_category("logistic-robot")
+add_robotics_category("roboport")
+add_robotics_category("active-provider-chest")
+add_robotics_category("passive-provider-chest")
+add_robotics_category("storage-chest")
+add_robotics_category("buffer-chest")
+add_robotics_category("requester-chest")
 
 -- Inserters
-data.raw.recipe["inserter"].categories = {"robotics"}
-data.raw.recipe["long-handed-inserter"].categories = {"robotics"}
-data.raw.recipe["fast-inserter"].categories = {"robotics"}
-data.raw.recipe["bulk-inserter"].categories = {"robotics"}
-data.raw.recipe["stack-inserter"].categories = {"robotics"}
+add_robotics_category("inserter")
+add_robotics_category("long-handed-inserter")
+add_robotics_category("fast-inserter")
+add_robotics_category("bulk-inserter")
+add_robotics_category("stack-inserter")
 
 -- Spidertron
-data.raw.recipe["spidertron"].categories = {"robotics"}
+add_robotics_category("spidertron")
 
 -- Intermediates
-data.raw.recipe["flying-robot-frame"].categories = {"robotics"}
-data.raw.recipe["engine-unit"].categories = {"robotics"}
-data.raw.recipe["electric-engine-unit"].categories = {"robotics"}
+add_robotics_category("flying-robot-frame")
+add_robotics_category("engine-unit")
+add_robotics_category("electric-engine-unit")
 
 -- Space Buildings
-data.raw.recipe["asteroid-collector"].categories = {"robotics"}
+add_robotics_category("asteroid-collector")
 
 -- Capsules
-data.raw.recipe["defender-capsule"].categories = {"robotics"}
-data.raw.recipe["distractor-capsule"].categories = {"robotics"}
-data.raw.recipe["destroyer-capsule"].categories = {"robotics"}
+add_robotics_category("defender-capsule")
+add_robotics_category("distractor-capsule")
+add_robotics_category("destroyer-capsule")
 
 -- Personal Equipment 
-data.raw.recipe["exoskeleton-equipment"].categories = {"robotics"}
-data.raw.recipe["personal-roboport-equipment"].categories = {"robotics"}
-data.raw.recipe["personal-roboport-mk2-equipment"].categories = {"robotics"}
-data.raw.recipe["power-armor"].categories = {"robotics"}
-data.raw.recipe["power-armor-mk2"].categories = {"robotics"}
-data.raw.recipe["mech-armor"].categories = {"robotics"}
+add_robotics_category("exoskeleton-equipment")
+add_robotics_category("personal-roboport-equipment")
+add_robotics_category("personal-roboport-mk2-equipment")
+add_robotics_category("power-armor")
+add_robotics_category("power-armor-mk2")
+add_robotics_category("mech-armor")
 
 -- Ammo
-data.raw.recipe["capture-robot-rocket"].categories = {"robotics"}
-
--- Adopted from Lunar Landings: https://github.com/tburrows13/LunarLandings/blob/0214b4e48ce1dadf149d2fe8d4f878b0bafb7b62/prototypes/low-grav-assembling-machine.lua#L5C1-L20C4
-local function add_to_crafting_categories(prototype)
-    local crafting_categories = prototype.crafting_categories or {}
-    for i, category in pairs(crafting_categories) do
-        if category == "crafting" then
-            table.insert(crafting_categories, "robotics")
-            break
-        end
-    end
-end
-  
-for _, prototype in pairs(data.raw["assembling-machine"]) do
-    add_to_crafting_categories(prototype)
-end
-for _, prototype in pairs(data.raw["character"]) do
-    add_to_crafting_categories(prototype)
-end
-
--- Runs after the category overrides above
-require "__RoboticsFacility__.compatability.Maraxsis"
+add_robotics_category("capture-robot-rocket")
